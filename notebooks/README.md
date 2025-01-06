@@ -6,7 +6,7 @@ This directory contains Jupyter notebooks used for exploratory data analysis (ED
 
 ### 1. Exploration_of_customer_behavior.ipynb
 
-This notebook contains the exploratory data analysis (EDA) for understanding customer purchasing behavior. It includes the following sections:
+This notebook contains the exploratory data analysis (EDA) for understanding customer purchasing behavior. It includes the following sections:-
 
 1. **Import Required Libraries**: Import necessary libraries such as pandas, matplotlib, seaborn, and logging.
 2. **Load Data**: Load the datasets (`store.csv`, `train.csv`, etc.) into pandas DataFrames.
