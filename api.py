@@ -1,3 +1,6 @@
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import numpy as np
@@ -16,6 +19,9 @@ app = FastAPI()
 # Load the trained model
 model_path = "./model.h5"  # Adjust the path if necessary
 model = load_model(model_path, custom_objects={"mse": mse})
+
+# Recompile the model
+model.compile(optimizer='adam', loss=mse, metrics=['mse'])
 
 # Load the saved scalers
 scaler_X = joblib.load('scaler_X.pkl')
