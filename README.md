@@ -1,5 +1,7 @@
 # Rossmann Pharmaceuticals Sales Forecasting
 
+![alt text](image-1.png)
+
 ## Project Overview
 
 This project aims to forecast sales for Rossmann Pharmaceuticals stores across several cities six weeks ahead of time. The finance team relies on these forecasts to make informed decisions. The project involves building and serving an end-to-end product that delivers these predictions to analysts in the finance team.
@@ -89,3 +91,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License.
+![alt text](image.png)
