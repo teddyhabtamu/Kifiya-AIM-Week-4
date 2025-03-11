@@ -1,26 +1,52 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 import logging
+import pandas as pd
 
-def correlation(train_df):
-  # Correlation Between Sales and Number of Customers
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler("correlation_analysis.log"),
+        logging.StreamHandler()
+    ]
+)
 
-  # Calculate the correlation between Sales and Customers
-  correlation = train_df[['Sales', 'Customers']].corr().iloc[0, 1]
+def correlation(train_df: pd.DataFrame):
+    """
+    Computes and visualizes the correlation between Sales and Number of Customers.
 
-  # Log the correlation value
-  logging.info(f'Correlation between Sales and Customers: {correlation}')
+    Parameters:
+        train_df (pd.DataFrame): The training dataset.
 
-  # Plot the relationship between Sales and Customers
-  plt.figure(figsize=(10, 6))
-  sns.scatterplot(x='Customers', y='Sales', data=train_df, alpha=0.5)
-  plt.title('Correlation Between Sales and Number of Customers')
-  plt.xlabel('Number of Customers')
-  plt.ylabel('Sales')
-  plt.show()
+    Returns:
+        None
+    """
+    # Ensure required columns exist
+    if 'Sales' not in train_df.columns or 'Customers' not in train_df.columns:
+        logging.error("Missing 'Sales' or 'Customers' column in dataset.")
+        return
 
-  # Display the correlation value on the plot
-  plt.annotate(f'Correlation: {correlation:.2f}', xy=(0.05, 0.95), xycoords='axes fraction', fontsize=12, color='red')
+    # Compute correlation
+    correlation_value = train_df[['Sales', 'Customers']].corr().at['Sales', 'Customers']
+    logging.info(f'Correlation between Sales and Customers: {correlation_value:.4f}')
 
-  # Log the completion of the correlation analysis
-  logging.info('Correlation analysis between Sales and Customers completed successfully')
+    # Plot relationship with regression trend
+    plt.figure(figsize=(10, 6))
+    sns.regplot(x='Customers', y='Sales', data=train_df, scatter_kws={'alpha': 0.5}, line_kws={'color': 'red'})
+    plt.title('Correlation Between Sales and Number of Customers')
+    plt.xlabel('Number of Customers')
+    plt.ylabel('Sales')
+
+    # Display correlation value on plot
+    plt.text(
+        0.05, 0.9, f'Correlation: {correlation_value:.2f}',
+        transform=plt.gca().transAxes, fontsize=12, color='red', bbox=dict(facecolor='white', alpha=0.7)
+    )
+
+    # Save and show plot
+    plt.savefig("correlation_sales_customers.png", dpi=300, bbox_inches='tight')
+    plt.show()
+
+    logging.info('Correlation analysis completed successfully. Plot saved as correlation_sales_customers.png.')

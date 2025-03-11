@@ -171,3 +171,5 @@ Name: proportion, dtype: float64
 29  2015      6  5808.674892
 30  2015      7  5878.426912
 2025-03-11 18:36:05,807 - INFO - Seasonal sales analysis completed!
+2025-03-11 18:38:11,439 - INFO - Correlation between Sales and Customers: 0.8868
+2025-03-11 18:40:48,300 - INFO - Correlation analysis completed successfully. Plot saved as correlation_sales_customers.png.
