@@ -50,8 +50,8 @@ The `scripts` directory contains the following Python scripts used for different
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/rossmann-pharmaceuticals-sales-forecasting.git
-    cd rossmann-pharmaceuticals-sales-forecasting
+    git clone https://github.com/teddyhabtamu/Kifiya-AIM-Week-4.git
+    cd Kifiya-AIM-Week-4
     ```
 
 2. Create and activate a virtual environment:
