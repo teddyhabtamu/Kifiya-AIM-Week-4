@@ -173,3 +173,30 @@ Name: proportion, dtype: float64
 2025-03-11 18:36:05,807 - INFO - Seasonal sales analysis completed!
 2025-03-11 18:38:11,439 - INFO - Correlation between Sales and Customers: 0.8868
 2025-03-11 18:40:48,300 - INFO - Correlation analysis completed successfully. Plot saved as correlation_sales_customers.png.
+2025-03-11 18:55:43,478 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-11 18:55:43,631 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-11 18:55:44,419 - INFO - Effect of promotions on sales:
+   Promo        Sales
+0      0  4250.614772
+1      1  7512.835578
+2025-03-11 18:55:44,488 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-11 18:55:44,506 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-11 18:55:45,487 - INFO - Effect of promotions on number of customers:
+   Promo   Customers
+0      0  496.013235
+1      1  766.256424
+2025-03-11 18:55:46,959 - INFO - Comparison of customers with and without promotions:
+      Store  Customers_NoPromo  Customers_Promo
+0         1         399.682131       577.522222
+1         2         366.876289       678.702778
+2         3         475.549053       847.837535
+3         4         920.317627      1342.779710
+4         5         325.092784       637.177778
+...     ...                ...              ...
+1108   1111         283.484536       519.152778
+1109   1112         533.075731       856.778626
+1110   1113         495.946552       754.250000
+1111   1114         115.757764       259.500000
+1112   1115         297.800687       457.122222
+
+[1113 rows x 3 columns]
