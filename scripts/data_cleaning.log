@@ -85,3 +85,40 @@ min           0.000000
 75%        7651.000000
 max       14049.000000
 Name: Sales, dtype: float64
+2025-03-11 18:14:26,157 - INFO - Starting Promotion Distribution Visualization...
+2025-03-11 18:14:28,084 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-11 18:14:29,271 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-11 18:14:30,205 - INFO - Distribution of Promotions in Training Set:
+Promo
+0    0.627575
+1    0.372425
+Name: proportion, dtype: float64
+2025-03-11 18:14:30,363 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-11 18:14:30,422 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-11 18:14:30,612 - INFO - Distribution of Promotions in Test Set:
+Promo
+0    0.604167
+1    0.395833
+Name: proportion, dtype: float64
+2025-03-11 18:14:31,014 - INFO - Comparison of Promotion Distribution Between Training and Test Sets:
+   Promo  Training Set  Test Set
+0      0      0.627575  0.604167
+1      1      0.372425  0.395833
+2025-03-11 18:14:31,016 - INFO - Visualization Completed!
+2025-03-11 18:17:37,547 - INFO - Starting holiday sales analysis...
+2025-03-11 18:17:38,451 - INFO - Holiday-related columns created successfully
+2025-03-11 18:17:39,396 - INFO - Sales behavior during holidays:
+    Year   HolidayPeriod        Sales
+0   2013   After Holiday  3210.518838
+1   2013  Before Holiday  2398.115454
+2   2013  During Holiday   116.881295
+3   2013     Non-Holiday  5412.678701
+4   2014   After Holiday  3384.590462
+5   2014  Before Holiday  2310.262463
+6   2014  During Holiday   127.840920
+7   2014     Non-Holiday  5573.640723
+8   2015   After Holiday  6849.059578
+9   2015  Before Holiday   126.182718
+10  2015  During Holiday   125.521661
+11  2015     Non-Holiday  5631.201629
+2025-03-11 18:17:39,398 - INFO - Holiday sales analysis completed!
