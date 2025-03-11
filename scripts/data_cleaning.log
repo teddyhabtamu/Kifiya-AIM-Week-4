@@ -1,0 +1,87 @@
+2025-03-11 18:09:21,978 - INFO - Datasets loaded successfully
+2025-03-11 18:09:27,561 - INFO - Initial missing data:
+Store            0
+DayOfWeek        0
+Date             0
+Sales            0
+Customers        0
+Open             0
+Promo            0
+StateHoliday     0
+SchoolHoliday    0
+dtype: int64
+2025-03-11 18:09:27,983 - INFO - Final missing data:
+Store            0
+DayOfWeek        0
+Date             0
+Sales            0
+Customers        0
+Open             0
+Promo            0
+StateHoliday     0
+SchoolHoliday    0
+dtype: int64
+2025-03-11 18:09:27,993 - INFO - Initial missing data:
+Id                0
+Store             0
+DayOfWeek         0
+Date              0
+Open             11
+Promo             0
+StateHoliday      0
+SchoolHoliday     0
+dtype: int64
+2025-03-11 18:09:28,015 - INFO - Final missing data:
+Id               0
+Store            0
+DayOfWeek        0
+Date             0
+Open             0
+Promo            0
+StateHoliday     0
+SchoolHoliday    0
+dtype: int64
+2025-03-11 18:09:28,020 - INFO - Initial missing data:
+Store                          0
+StoreType                      0
+Assortment                     0
+CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2                         0
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-03-11 18:09:28,024 - INFO - Final missing data:
+Store                        0
+StoreType                    0
+Assortment                   0
+CompetitionDistance          0
+CompetitionOpenSinceMonth    0
+CompetitionOpenSinceYear     0
+Promo2                       0
+Promo2SinceWeek              1
+Promo2SinceYear              1
+PromoInterval                1
+dtype: int64
+2025-03-11 18:09:28,145 - INFO - Initial statistics for Sales:
+count    1.017209e+06
+mean     5.773819e+03
+std      3.849926e+03
+min      0.000000e+00
+25%      3.727000e+03
+50%      5.744000e+03
+75%      7.856000e+03
+max      4.155100e+04
+Name: Sales, dtype: float64
+2025-03-11 18:09:28,323 - INFO - Final statistics for Sales:
+count    990515.000000
+mean       5465.548842
+std        3368.179566
+min           0.000000
+25%        3650.000000
+50%        5651.000000
+75%        7651.000000
+max       14049.000000
+Name: Sales, dtype: float64
